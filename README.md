@@ -1,4 +1,4 @@
-# 📡 Network Monitoring Dashboard (Real-time)
+#  Network Monitoring Dashboard (Real-time)
 
 A simple full-stack project using **Node.js** and **vanilla HTML/CSS/JS** to simulate a basic **network monitoring dashboard**. It shows the online/offline status of devices in real-time using IP ping checks.
 
@@ -12,7 +12,7 @@ A simple full-stack project using **Node.js** and **vanilla HTML/CSS/JS** to sim
   - `ping` npm module
   - Static HTML/CSS/JavaScript (no frameworks)
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
@@ -37,7 +37,7 @@ node server.js
 
 Open your browser and navigate to: [http://localhost:3000](http://localhost:3000)
 
-## 📁 Project Structure
+## Project Folder Structure
 
 ```
 ├── public/
@@ -46,7 +46,7 @@ Open your browser and navigate to: [http://localhost:3000](http://localhost:3000
 └── README.md            # Project description
 ```
 
-## 🧠 Future Improvements
+## Improvements to be made
 
 - Add login/authentication system
 - Store device info in MongoDB or JSON file
