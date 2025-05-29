@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network Monitoring Dashboard</title>
+  <style>
+    body { font-family: Arial; }
+    .device { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+    .online { color: green; }
+    .offline { color: red; }
+    .unknown { color: gray; }
+  </style>
+</head>
+<body>
+  <h1>Network Devices</h1>
+  <div id="devices"></div>
+
+  <script>
+    function loadDevices() {
+      fetch('/api/devices')
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById('devices');
+          container.innerHTML = '';
+          data.forEach(device => {
+            const div = document.createElement('div');
+            div.className = 'device';
+            div.innerHTML = `
+              <strong>${device.name}</strong> (${device.ip}) - 
+              <span class="${device.status}">${device.status}</span>
+            `;
+            container.appendChild(div);
+          });
+        });
+    }
+
+    loadDevices();
+    setInterval(loadDevices, 5000);
+  </script>
+</body>
+</html>
