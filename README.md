@@ -53,6 +53,4 @@ Open your browser and navigate to: [http://localhost:3000](http://localhost:3000
 - Add charts and logs of uptime/downtime history
 - Improve frontend with a modern UI framework
 
-## 📜 License
 
-This project is open-source and free to use for learning purposes.
